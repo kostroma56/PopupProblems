@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<popups:PopupPage
+    x:Class="PopupProblems.NotificationPopupPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:MPowerKit.Popups.Animations;assembly=MPowerKit.Popups"
+    xmlns:popups="clr-namespace:MPowerKit.Popups;assembly=MPowerKit.Popups"
+    BackgroundColor="Transparent"
+    BackgroundInputTransparent="True"
+    InputTransparent="False">
+    <popups:PopupPage.Animation>
+        <animations:ScaleAnimation
+            EasingIn="{x:Static Easing.SinOut}"
+            EasingOut="{x:Static Easing.SinIn}"
+            PositionIn="Top"
+            PositionOut="Top"
+            ScaleIn="0.8"
+            ScaleOut="0.8" />
+    </popups:PopupPage.Animation>
+
+    <Border
+        Margin="20,50,20,0"
+        Padding="10"
+        BackgroundColor="BlueViolet"
+        HorizontalOptions="Center"
+        StrokeShape="{RoundRectangle CornerRadius=15}"
+        StrokeThickness="0"
+        VerticalOptions="Start">
+        <Label
+            FontSize="16"
+            Text="Notification"
+            TextColor="White" />
+    </Border>
+</popups:PopupPage>
