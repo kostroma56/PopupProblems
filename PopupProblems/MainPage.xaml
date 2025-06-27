@@ -32,6 +32,8 @@
                 Text="Click me" />
 
             <Button Command="{Binding ShowNotificationCommand}" Text="Show notification" />
+
+            <Button Command="{Binding NavigateWithPopupCommand}" Text="Navigate to next issue" />
         </VerticalStackLayout>
     </ScrollView>
 

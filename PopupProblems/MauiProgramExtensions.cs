@@ -16,7 +16,9 @@ public static class MauiProgramExtensions
                 .OnAppStart("/NavigationPage/MainPage")
                 .ConfigureServices(collection => collection
                     .RegisterForNavigation<MainPage, MainViewModel>()
-                    .RegisterForNavigation<NotificationPopupPage>()))
+                    .RegisterForNavigation<NotificationPopupPage>()
+                    .RegisterForNavigation<SomePage, SomeViewModel>()
+                    .RegisterForNavigation<SimplePopupPage, SimpleViewModel>()))
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

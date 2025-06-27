@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="PopupProblems.SomePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:popupProblems="clr-namespace:PopupProblems"
+    x:DataType="popupProblems:SomeViewModel">
+    <VerticalStackLayout>
+        <Button Command="{Binding OpenPopupAndGoBackCommand}" Text="Open popup and go back" />
+    </VerticalStackLayout>
+</ContentPage>
